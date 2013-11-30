@@ -89,7 +89,7 @@ class Server(object):
                 configfile = os.path.join(self.config['server']['handlers_config_path'],
                                           cls.__name__) + '.conf'
                 if os.path.exists(configfile):
-                    # Merge Collector config file
+                    # Merge Handler config file
                     handler_config.merge(configobj.ConfigObj(configfile))
 
                 # Initialize Handler class
